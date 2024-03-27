@@ -8,17 +8,21 @@
   box-sizing: border-box;
   list-style: none;
   font-family: "Rubik", sans-serif;
+  color: hsl(229, 31%, 21%);
 }
 
 body {
   background-color: hsl(0, 0%, 100%);
-  min-width: 100vw;
-  min-height: 100vh;
+}
+
+button {
+  height: 40px;
+  border-radius: 4px;
+  font-weight: 500;
 }
 
 .container {
   margin: 0 24px;
-  min-height: 100vh;
 }
 
 .button-icon {
@@ -40,11 +44,14 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: hsla(229, 31%, 21%, 0.8);
-  transform: translateX(100%);
+  transform: translate(-100%);
   transition: 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .header__navbar .menu__title {
   display: flex;
@@ -67,6 +74,66 @@ body {
   font-size: 1.8rem;
   border: 2px solid hsl(0, 0%, 100%);
   padding: 8px;
-  border-radius: 4px;
   width: 100%;
+}
+.header__navbar .menu__social-media {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.hero {
+  margin-top: 64px;
+}
+.hero__illustration {
+  position: relative;
+  z-index: -1;
+}
+.hero__illustration .illustration__img {
+  width: 310px;
+}
+.hero__illustration .illustration__shadow {
+  width: 300px;
+  height: 180px;
+  background-color: hsl(231, 69%, 60%);
+  position: absolute;
+  top: 50px;
+  right: -24px;
+  z-index: -1;
+  border-radius: 0 0 0 100px;
+}
+.hero__text {
+  margin-top: 40px;
+}
+.hero__text h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  color: hsl(229, 31%, 21%);
+}
+.hero__text p {
+  color: hsl(229, 8%, 60%);
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 32px 0;
+  line-height: 1.5em;
+}
+.hero__text .buttons-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero__text .buttons-container .button {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+.hero__text .buttons-container .button--blue {
+  background-color: hsl(231, 69%, 60%);
+  color: hsl(0, 0%, 100%);
+}
+.hero__text .buttons-container .button--white {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0px 2px 2px hsl(229, 8%, 60%);
 }/*# sourceMappingURL=style.css.map */

@@ -11,6 +11,6 @@ menuBurguerBtn.addEventListener('click', () => {
 })
 
 closeBtn.addEventListener('click', () => {
-    navbar.setAttribute('style', 'transform:translateX(100%)')
+    navbar.setAttribute('style', 'transform:translateX(-100%);')
     menuBurguerBtn.setAttribute('style','display:block')
 })

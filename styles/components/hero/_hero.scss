@@ -1,0 +1,69 @@
+@import '../../abstract/variables';
+
+.hero{
+    margin-top: 64px;
+
+    &__illustration{
+        position: relative;
+        z-index: -1;
+        
+        .illustration__img{
+            width: 310px;
+        }
+
+        .illustration__shadow{
+            width: 300px;
+            height: 180px;
+            background-color: $soft-blue;
+            position: absolute;
+            top: 50px;
+            right: -24px;
+            z-index: -1;
+            border-radius: 0 0 0 100px;
+        }
+
+    }
+
+    &__text{
+        margin-top: 40px;
+        
+        h1{
+            font-size: 2.8rem;
+            text-align: center;
+            color: $very-dark-blue;
+        }
+
+        p{
+            color: $grayish-blue;
+            text-align: center;
+            font-size: 1.6rem;
+            margin: 32px 0;
+            line-height: 1.5em;
+        }
+
+        .buttons-container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .button{
+                padding: 16px;
+                display: flex;
+                align-items: center;
+                border: none;
+
+                &--blue{
+                    background-color: $soft-blue;
+                    color: $white;
+                }
+
+                &--white{
+                    background-color: $white;
+                    box-shadow: 0px 2px 2px $grayish-blue ;
+                }
+            }
+
+
+        }
+    }
+}

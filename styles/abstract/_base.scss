@@ -9,17 +9,21 @@
     box-sizing: border-box;
     list-style: none;
     font-family: $font-family;
+    color: $very-dark-blue;
 }
 
 body{
     background-color: $white;
-    min-width: 100vw;
-    min-height: 100vh;
+}
+
+button{
+    height: 40px;
+    border-radius: 4px;
+    font-weight: $font-bold;
 }
 
 .container{
     margin: 0 24px;
-    min-height: 100vh;
 }
 
 .button-icon{

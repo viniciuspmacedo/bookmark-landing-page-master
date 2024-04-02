@@ -25,11 +25,40 @@ button {
   margin: 0 24px;
 }
 
+.title {
+  font-size: 2.8rem;
+  text-align: center;
+  color: hsl(229, 31%, 21%);
+}
+
+.paragrapher {
+  color: hsl(229, 8%, 60%);
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 32px 0;
+  line-height: 1.5em;
+}
+
 .button-icon {
   min-width: 32px;
   min-height: 32px;
   border: none;
   background-color: transparent;
+}
+
+.button {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+.button--blue {
+  background-color: hsl(231, 69%, 60%);
+  color: hsl(0, 0%, 100%);
+}
+.button--white {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0px 2px 2px hsl(229, 8%, 60%);
 }
 
 .header {
@@ -41,7 +70,7 @@ button {
 }
 .header__navbar {
   padding: 32px 24px 0 24px;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -92,10 +121,11 @@ button {
 }
 .hero__illustration .illustration__img {
   width: 310px;
+  max-height: 202px;
 }
 .hero__illustration .illustration__shadow {
   width: 300px;
-  height: 180px;
+  height: 160px;
   background-color: hsl(231, 69%, 60%);
   position: absolute;
   top: 50px;
@@ -106,34 +136,89 @@ button {
 .hero__text {
   margin-top: 40px;
 }
-.hero__text h1 {
-  font-size: 2.8rem;
-  text-align: center;
-  color: hsl(229, 31%, 21%);
-}
-.hero__text p {
-  color: hsl(229, 8%, 60%);
-  text-align: center;
-  font-size: 1.6rem;
-  margin: 32px 0;
-  line-height: 1.5em;
-}
 .hero__text .buttons-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.hero__text .buttons-container .button {
-  padding: 16px;
-  display: flex;
-  align-items: center;
-  border: none;
+
+.features {
+  margin-top: 156px;
 }
-.hero__text .buttons-container .button--blue {
+.features .tab__illustration {
+  position: relative;
+  z-index: -1;
+}
+.features .tab__illustration__img {
+  width: 310px;
+  max-height: 202px;
+}
+.features .tab__illustration__shadow {
+  width: 300px;
+  height: 180px;
   background-color: hsl(231, 69%, 60%);
-  color: hsl(0, 0%, 100%);
+  position: absolute;
+  top: 70px;
+  left: -24px;
+  z-index: -1;
+  border-radius: 0 0 100px 0;
 }
-.hero__text .buttons-container .button--white {
-  background-color: hsl(0, 0%, 100%);
-  box-shadow: 0px 2px 2px hsl(229, 8%, 60%);
+.features .tab__description {
+  margin-top: 88px;
+}
+.features .tab__description button {
+  display: none;
+}
+.features .tab__buttons {
+  margin-bottom: 48px;
+  text-align: center;
+}
+.features .tab__buttons :nth-child(3) {
+  border-bottom: 1px solid hsl(229, 8%, 60%);
+}
+.features .tab__button {
+  border-top: 1px solid hsl(229, 8%, 60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.features .tab__button.active button {
+  color: hsl(229, 31%, 21%);
+  font-weight: 500;
+}
+.features .tab__button.active hr {
+  display: block;
+  width: 140px;
+  height: 4px;
+  background-color: hsl(0, 94%, 66%);
+  color: hsl(0, 94%, 66%);
+}
+.features .tab__button button {
+  font-size: 1.8rem;
+  font-weight: 100;
+  width: 180px;
+  background-color: transparent;
+  border: none;
+  color: hsl(229, 8%, 60%);
+}
+.features .tab__button hr {
+  display: none;
+}
+.features .tab__item {
+  display: none;
+}
+.features .tab__item.active {
+  display: block;
+  animation: tab 0.6s ease-in;
+}
+@keyframes tab {
+  from {
+    margin-left: -1000px;
+    width: 300%;
+  }
+  to {
+    margin-left: 0;
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

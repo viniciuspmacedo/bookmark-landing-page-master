@@ -1,6 +1,6 @@
 // declara as referencias aos botões
-const menuBurguerBtn = document.querySelector('.burguer-button')
-const closeBtn = document.querySelector('.close-button')
+const menuBurguerBtn = document.querySelector('[data-button = menu]')
+const closeBtn = document.querySelector('[data-button = close]')
 
 // declara os elementos manipulados
 const navbar = document.querySelector('.header__navbar')

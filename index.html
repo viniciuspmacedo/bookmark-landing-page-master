@@ -28,19 +28,23 @@
       color: hsl(228, 45%, 44%);
     }
   </style>
+
   <script src="./scripts/menu-burguer.js" defer></script>
+  <script src="./scripts/tab.js" defer></script>
 </head>
 
 <body>
   <div class="container">
     <header class="header">
       <img class="logo" src="./images/logo-bookmark.svg" alt="logo da bookmark">
-      <button class="burguer-button button-icon"><img src="./images/icon-hamburger.svg" alt="menu hamburger"></button>
+      <button class="button-icon" data-button="menu"><img src="./images/icon-hamburger.svg"
+          alt="menu hamburger"></button>
       <nav class="header__navbar">
         <menu class="header__menu">
           <div class="menu__title">
             <img class="logo" src="./images/logo-bookmark-white.svg" alt="logo bookmark">
-            <button class="close-button button-icon"><img src="./images/icon-close.svg" alt="close menu"></button>
+            <button class="button-icon" data-button="close"><img src="./images/icon-close.svg"
+                alt="close menu"></button>
           </div>
           <li class="menu__item">FEATURES</li>
           <li class="menu__item">PRICING</li>
@@ -54,14 +58,14 @@
       </nav>
     </header>
     <main>
-      <div class="hero">
+      <section class="hero">
         <div class="hero__illustration">
           <img class="illustration__img" src="./images/illustration-hero.svg" alt="" aria-hidden="true">
           <div class="illustration__shadow"></div>
         </div>
         <div class="hero__text">
-          <h1>A Simple Bookmark Manager</h1>
-          <p>A clean and simple interface to organize your favorite websites.
+          <h1 class="title">A Simple Bookmark Manager</h1>
+          <p class="paragrapher">A clean and simple interface to organize your favorite websites.
             Open a new browser tab and see your sites load instantly. Try it for free.
           </p>
           <div class="buttons-container">
@@ -73,7 +77,83 @@
             </button>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="features">
+        <div class="features__description">
+          <h2 class="title">Features</h2>
+          <p class="paragrapher">Our aim is to make it quick and easy for you to access your
+            favorite websites. Your bookmarks sync between your devices so
+            you can access them on the go.
+          </p>
+        </div>
+        <div class="features__tab">
+          <div class="tab__buttons">
+            <div class="tab__button active" data-tab="tab-1">
+              <button>Simple Bookmarking</button>
+              <hr>
+            </div>
+            <div class="tab__button" data-tab="tab-2">
+              <button>Speed Searching</button>
+              <hr>
+            </div>
+            <div class="tab__button" data-tab="tab-3">
+              <button>Easy Sharing</button>
+              <hr>
+            </div>
+          </div>
+          <div class="tab__items">
+            <div class="tab__item active" data-content="tab-1">
+
+              <div class="tab__illustration">
+                <img class="tab__illustration__img" src="./images/illustration-features-tab-1.svg" alt=""
+                  aria-hidden="true">
+                <div class="tab__illustration__shadow"></div>
+              </div>
+              <div class="tab__description">
+                <h2 class="title">Bookmark in one click</h2>
+                <p class="paragrapher">Organize your bookmarks however you like.
+                  Our simple grad-and-drop interface gives you complete control
+                  over how you manage your favorite sites.
+                </p>
+                <button class="button button--blue">More info</button>
+              </div>
+
+            </div>
+
+            <div class="tab__item" data-content="tab-2">
+              <div class="tab__illustration">
+                <img class="tab__illustration__img" src="./images/illustration-features-tab-2.svg" alt=""
+                  aria-hidden="true">
+                <div class="tab__illustration__shadow"></div>
+              </div>
+              <div class="tab__description">
+                <h2 class="title">Intelligent search</h2>
+                <p class="paragrapher">Our powerful search feature will help you find saved sites in no time at all.
+                  No need to trawl through all of your bookmarks.
+                </p>
+                <button class="button button--blue">More info</button>
+              </div>
+            </div>
+
+            <div class="tab__item" data-content="tab-3">
+              <div class="tab__illustration">
+                <img class="tab__illustration__img" src="./images/illustration-features-tab-3.svg" alt=""
+                  aria-hidden="true">
+                <div class="tab__illustration__shadow"></div>
+              </div>
+              <div class="tab__description">
+                <h2 class="title">Share your bookmarks</h2>
+                <p class="paragrapher">Easily share your bookmarks and collections with others. Create a shareable
+                  link that you can send at the click of a button.
+                </p>
+                <button class="button button--blue">More info</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
     </main>
   </div>
 

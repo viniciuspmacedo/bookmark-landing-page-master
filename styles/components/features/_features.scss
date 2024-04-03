@@ -50,6 +50,9 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            display: flex;
+            position: relative;
+            padding: 12px 0;
 
             &.active {
 
@@ -64,6 +67,8 @@
                     height: 4px;
                     background-color: $soft-red;
                     color: $soft-red;
+                    position: absolute;
+                    bottom: -1px;
                 }
 
             }

@@ -1,0 +1,42 @@
+@import '../../abstract/variables';
+
+.faq {
+    margin-top: 156px   ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__questions {
+        margin-bottom: 48px;
+    }
+
+    details {
+        border-bottom: 1px solid $grayish-blue;
+        padding: 16px 0;
+        min-width: 327px;
+
+        p {
+            font-size: 1.4rem;
+            line-height: 2.5rem;
+            padding: 16px 0;
+            color: $grayish-blue;
+        }
+
+        summary {
+            font-size: 1.6rem;
+            font-weight: $font-bold;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &[open] {
+            img {
+
+                transform: rotate(180deg);
+                //gerador do filter https://codepen.io/sosuke/pen/Pjoqqp
+                filter: invert(79%) sepia(74%) saturate(5271%) hue-rotate(320deg) brightness(91%) contrast(115%);
+            }
+        }
+    }
+
+}

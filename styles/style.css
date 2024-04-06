@@ -26,7 +26,7 @@ button {
 }
 
 .title {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   text-align: center;
   color: hsl(229, 31%, 21%);
 }
@@ -229,7 +229,7 @@ button {
 }
 
 .download {
-  margin: 64px 0;
+  margin-top: 156px;
 }
 
 .card {
@@ -237,19 +237,59 @@ button {
   flex-direction: column;
   align-items: center;
   border-radius: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 48px;
   border-radius: 16px;
   box-shadow: 2px 12px 16px hsl(229, 8%, 60%);
   padding: 48px 18px 18px 18px;
-  gap: 16px;
-}
-.card p {
-  margin: 0;
-}
-.card h3 {
-  margin: 0;
 }
 .card button {
   width: 100%;
   border: none;
+}
+.card__logo {
+  display: block;
+  margin: 32px;
+}
+.card__divider {
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+.card__description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card__description p, .card__description h3 {
+  margin: 0;
+}
+
+.faq {
+  margin-top: 156px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faq__questions {
+  margin-bottom: 48px;
+}
+.faq details {
+  border-bottom: 1px solid hsl(229, 8%, 60%);
+  padding: 16px 0;
+  min-width: 327px;
+}
+.faq details p {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  padding: 16px 0;
+  color: hsl(229, 8%, 60%);
+}
+.faq details summary {
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+.faq details[open] img {
+  transform: rotate(180deg);
+  filter: invert(79%) sepia(74%) saturate(5271%) hue-rotate(320deg) brightness(91%) contrast(115%);
 }/*# sourceMappingURL=style.css.map */

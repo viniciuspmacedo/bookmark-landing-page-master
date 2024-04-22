@@ -15,14 +15,8 @@ body {
   background-color: hsl(0, 0%, 100%);
 }
 
-button {
-  height: 40px;
-  border-radius: 4px;
-  font-weight: 500;
-}
-
-.container {
-  margin: 0 24px;
+section, header {
+  padding: 0 24px;
 }
 
 .title {
@@ -37,6 +31,12 @@ button {
   font-size: 1.6rem;
   margin: 32px 0;
   line-height: 1.5em;
+}
+
+button {
+  height: 40px;
+  border-radius: 4px;
+  font-weight: 500;
 }
 
 .button-icon {
@@ -59,6 +59,10 @@ button {
 .button--white {
   background-color: hsl(0, 0%, 100%);
   box-shadow: 0px 2px 2px hsl(229, 8%, 60%);
+}
+.button--red {
+  background-color: hsl(0, 94%, 66%);
+  color: hsl(0, 0%, 100%);
 }
 
 .header {
@@ -292,4 +296,79 @@ button {
 .faq details[open] img {
   transform: rotate(180deg);
   filter: invert(79%) sepia(74%) saturate(5271%) hue-rotate(320deg) brightness(91%) contrast(115%);
+}
+
+.newsletter {
+  margin-top: 124px;
+  background-color: hsl(231, 69%, 60%);
+  width: 100%;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.newsletter__description {
+  text-align: center;
+}
+.newsletter__description p {
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 0.25rem;
+}
+.newsletter__description h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 2.2rem;
+  margin-top: 16px;
+}
+.newsletter__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+  gap: 12px;
+}
+.newsletter__form input {
+  width: 100%;
+  height: 40px;
+  padding: 16px;
+  border-radius: 4px;
+  border: none;
+}
+.newsletter__form input::-moz-placeholder {
+  color: hsl(229, 8%, 60%);
+}
+.newsletter__form input::placeholder {
+  color: hsl(229, 8%, 60%);
+}
+.newsletter__form button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: hsl(229, 31%, 21%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .logo {
+  margin: 32px 0;
+  max-width: 40%;
+}
+.footer .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.footer .menu__item {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.6rem;
+  font-weight: 100;
+  text-align: center;
+}
+.footer__social-media {
+  margin: 32px 0;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
 }/*# sourceMappingURL=style.css.map */

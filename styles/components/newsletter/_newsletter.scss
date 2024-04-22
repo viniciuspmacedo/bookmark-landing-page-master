@@ -1,0 +1,49 @@
+.newsletter{
+    margin-top: 124px;
+    background-color: $soft-blue;
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    &__description{
+        text-align: center;
+
+        p{
+            color: $white;
+            letter-spacing: 0.25rem;
+        }
+
+        h2{
+            color: $white;
+            font-size: 2.2rem;
+            margin-top: 16px;
+        }
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
+        gap: 12px;
+
+        input{
+            width: 100%;
+            height: 40px;
+            padding: 16px;
+            border-radius: 4px;
+            border: none;
+
+            &::placeholder{
+                color: $grayish-blue;
+            }
+        }
+
+        button{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

@@ -17,14 +17,8 @@ body{
     background-color: $white;
 }
 
-button{
-    height: 40px;
-    border-radius: 4px;
-    font-weight: $font-bold;
-}
-
-.container{
-    margin: 0 24px;
+section, header{
+    padding: 0 24px;
 }
 
 .title{
@@ -39,6 +33,12 @@ button{
     font-size: 1.6rem;
     margin: 32px 0;
     line-height: 1.5em;
+}
+
+button{
+    height: 40px;
+    border-radius: 4px;
+    font-weight: $font-bold;
 }
 
 .button-icon{
@@ -62,5 +62,10 @@ button{
     &--white{
         background-color: $white;
         box-shadow: 0px 2px 2px $grayish-blue ;
+    }
+
+    &--red{
+        background-color: $soft-red;
+        color: $white;
     }
 }
